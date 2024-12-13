@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://slavetomints.github.io/guides/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="https://slavetomints.github.io/guides/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Category</title>
+</head>
+<body>
+  <nav class="green-border" id="larger-margins">
+    <h1>Slavetomints' Guides</h1>
+    <p><i>A collection of guides for tools and other interesting things I like</i></p>
+    <ul>
+      <li><a href="https://slavetomints.github.io/guides/index.html">Home</a></li>
+      <li><a href="https://slavetomints.github.io/writeups/writeups.html">Writeups</a></li>
+      <li><a href="https://slavetomints.github.io/guides/guides.html">Guides</a></li>
+      <li><a href="https://slavetomints.github.io/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="green-border">
+    <h1>Vocabulary</h1>
+    <dl>
+      <dt id="alias">Alias</dt>
+      <dd>A shortcut created in the shell to simplify the execution of commands. For example, `alias john='/usr/sbin/john'` allows the user to call John the Ripper more easily on ParrotOS.</dd>
+      
+      <dt id="bcrypt">bcrypt</dt>
+      <dd>A hashing algorithm specifically designed for securely hashing passwords, featuring built-in salting and a configurable work factor to make brute-force attacks more difficult.</dd>
+      
+      <dt id="brute-force">Brute Force</dt>
+      <dd>A password-cracking method that involves trying every possible combination of characters until the correct password is found. Brute-forcing is computationally intensive but effective for shorter passwords.</dd>
+      
+      <dt id="ciphertext">Ciphertext</dt>
+      <dd>The encrypted version of plaintext. For example, the ciphertext of "Hello World!" in Base64 is "SGVsbG8gV29ybGQh".</dd>
+      
+      <dt id="hash">Hash</dt>
+      <dd>The fixed-size output produced by a hashing algorithm. For example, the SHA-256 hash of "password123" is "ef92b778bafe771e89245b89ecbc8c3cc9a89725e3dbd09b94e8f9f374996645".</dd>
+      
+      <dt id="hashing">Hashing</dt>
+      <dd>A process that applies a mathematical algorithm to data (like passwords) to transform it into a fixed-size output called a hash. Hashing is a one-way process, meaning it cannot be reversed to retrieve the original data.</dd>
+      
+      <dt id="john-the-ripper">John the Ripper</dt>
+      <dd>An offline password-cracking tool that supports a wide variety of hash algorithms. Its flexibility and features, enhanced by the `Jumbo John` version, make it one of the most popular tools for password security testing.</dd>
+      
+      <dt id="johnny">Johnny</dt>
+      <dd>The graphical user interface (GUI) version of John the Ripper, included in ParrotOS, which provides a user-friendly way to perform password-cracking tasks.</dd>
+      
+      <dt id="jumbo-john">Jumbo John</dt>
+      <dd>An extended version of John the Ripper that includes additional features and support for more hashing algorithms and password-cracking techniques.</dd>
+      
+      <dt id="kali-linux">Kali Linux</dt>
+      <dd>A Debian-based Linux distribution designed for cybersecurity tasks such as penetration testing and digital forensics. It comes preinstalled with tools like John the Ripper.</dd>
+      
+      <dt id="md5">MD5</dt>
+      <dd>A widely used cryptographic hashing algorithm that produces a 128-bit hash. It is considered insecure for many uses because it is vulnerable to collision and preimage attacks.</dd>
+      
+      <dt id="package-manager">Package Manager</dt>
+      <dd>A tool used in Linux and other operating systems to install, update, and manage software packages. Examples include `apt` for Debian-based systems and `yum` for Red Hat-based systems.</dd>
+      
+      <dt id="parrot-os">ParrotOS</dt>
+      <dd>A security-focused Linux distribution, similar to Kali Linux, offering tools for penetration testing, vulnerability assessment, and forensics. It includes a GUI version of John the Ripper called `johnny`.</dd>
+      
+      <dt id="password-cracking">Password Cracking</dt>
+      <dd>The process of recovering plaintext passwords from their hashed versions using methods such as wordlists or brute force.</dd>
+      
+      <dt id="plaintext">Plaintext</dt>
+      <dd>The unencrypted version of data. For example, the plaintext of the Base64 encoded string "SGVsbG8gV29ybGQh" is "Hello World!".</dd>
+      
+      <dt id="rockyou.txt">rockyou.txt</dt>
+      <dd>A famous wordlist containing about 14.5 million passwords, derived from a 2009 data breach at `rockyou.com`. It is commonly used in password-cracking tools.</dd>
+      
+      <dt id="sha-256">SHA-256</dt>
+      <dd>A member of the SHA-2 family of cryptographic hash functions. It produces a 256-bit hash and is commonly used for secure password storage and data integrity checks.</dd>
+      
+      <dt id="wordlist">Wordlist</dt>
+      <dd>A text file containing a list of potential passwords used in password-cracking attacks. Tools like `John the Ripper` and `Hashcat` use wordlists to compare hashed values to known plaintext values.</dd>      
+    </dl>
+  </div>
+  
+  <nav class="green-border" id="larger-margins">
+    <ul>
+      <li><a href="https://slavetomints.github.io/guides/index.html">Home</a></li>
+      <li><a href="https://slavetomints.github.io/writeups/writeups.html">Writeups</a></li>
+      <li><a href="https://slavetomints.github.io/guides/guides.html">Guides</a></li>
+      <li><a href="https://slavetomints.github.io/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</body>
+</html>
