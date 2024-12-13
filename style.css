@@ -7,6 +7,10 @@ body {
   color: #00FF00; /* Default text color for non-code elements */
 }
 
+dd {
+  margin-bottom: 50px;
+}
+
 /* Code Block Styles */
 md-block pre code {
   color: inherit; /* Let Prism handle syntax highlighting */
@@ -217,6 +221,11 @@ md-block img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+#flex-vertical-split {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Additional Styles */
