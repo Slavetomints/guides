@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://slavetomints.github.io/guides/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="https://slavetomints.github.io/guides/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>List Scans</title>
+</head>
+<body>
+  <nav class="green-border" id="larger-margins">
+    <h1>Slavetomints' Guides</h1>
+    <p><i>A collection of guides for tools and other interesting things I like</i></p>
+    <ul>
+      <li><a href="https://slavetomints.github.io/guides/index.html">Home</a></li>
+      <li><a href="https://slavetomints.github.io/writeups/writeups.html">Writeups</a></li>
+      <li><a href="https://slavetomints.github.io/guides/guides.html">Guides</a></li>
+      <li><a href="https://slavetomints.github.io/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="green-border">
+    <p><a href="https://slavetomints.github.io/guides/guides/network-security/network-security.html">Network Security</a> / <a href="https://slavetomints.github.io/guides/guides/network-security/nmap/nmap.html">Nmap</a> / <a href=https://slavetomints.github.io/guides/guides/network-security/nmap/list-scans.html>List Scans</a></p>
+    <md-block>
+      # Listing Scans
+
+      So you want to to scan a network to look for alive hosts, but you want to make sure that you remain in scope. Thankfully Nmap has a nifty tool for that.
+      
+      So lets say your scope is limited to `192.168.0.0/24`, and you want to be sure you only scan things on that subnet. But you cant just hope and pray that your command will be correct on the first go, that will look unprofessional. So you need to validate what you'll be scanning on the network. For that lets use the `-sL` flag.
+      
+      The `--sL` flag stands for  List Scan, and all it does it list out the target that you are going to scan with your current settings. So, taking our `192.168.0.0/24` example, the output would look something like this:
+      
+      ```
+      
+      ┌─[slavetomints@parrot]─[~]
+      └──╼ $nmap -sL 192.168.0.0/24
+      Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-14 15:47 CST
+      Nmap scan report for 192.168.0.0
+      Nmap scan report for 192.168.0.1
+      Nmap scan report for 192.168.0.2
+      Nmap scan report for 192.168.0.3
+      Nmap scan report for 192.168.0.4
+      Nmap scan report for 192.168.0.5
+      Nmap scan report for 192.168.0.6
+      Nmap scan report for 192.168.0.7
+      Nmap scan report for 192.168.0.8
+      Nmap scan report for 192.168.0.9
+      Nmap scan report for 192.168.0.10
+      Nmap scan report for 192.168.0.11
+      Nmap scan report for 192.168.0.12
+      --------&lt;Cut for brevity&gt;--------
+      Nmap scan report for 192.168.0.248
+      Nmap scan report for 192.168.0.249
+      Nmap scan report for 192.168.0.250
+      Nmap scan report for 192.168.0.251
+      Nmap scan report for 192.168.0.252
+      Nmap scan report for 192.168.0.253
+      Nmap scan report for 192.168.0.254
+      Nmap scan report for 192.168.0.255
+      ```
+      This is helpful in the reconnaissance phase since the "scan" doesn't send any packets and instead tries only to resolve hostnames. The reason it is important that you don't accidentally scan the wrong network is that you can get in serious trouble for acting out of scope, as you have no legal protections for that.
+      
+      If DNS is configured, Nmap may resolve and display hostnames alongside IP addresses. Otherwise, it will just list the IPs. In this example, we only got hostnames, but its still nice to be able to verify that what we're scanning is correct.
+      
+      
+    </md-block>
+  </div>
+  
+  <nav class="green-border" id="larger-margins">
+    <ul>
+      <li><a href="https://slavetomints.github.io/guides/index.html">Home</a></li>
+      <li><a href="https://slavetomints.github.io/writeups/writeups.html">Writeups</a></li>
+      <li><a href="https://slavetomints.github.io/guides/guides.html">Guides</a></li>
+      <li><a href="https://slavetomints.github.io/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</body>
+</html>
