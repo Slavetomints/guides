@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://slavetomints.github.io/guides/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="https://slavetomints.github.io/guides/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Nmap</title>
+</head>
+<body>
+  <nav class="green-border" id="larger-margins">
+    <h1>Slavetomints' Guides</h1>
+    <p><i>A collection of guides for tools and other interesting things I like</i></p>
+    <ul>
+      <li><a href="https://slavetomints.github.io/guides/index.html">Home</a></li>
+      <li><a href="https://slavetomints.github.io/writeups/writeups.html">Writeups</a></li>
+      <li><a href="https://slavetomints.github.io/guides/guides.html">Guides</a></li>
+      <li><a href="https://slavetomints.github.io/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div id="flex-vertical-split">
+
+    <div class="green-border">
+      <p><a href="https://slavetomints.github.io/guides/guides/network-security/nmap/nmap.html">Nmap</a></p>
+      <ul>
+        <li><a href="https://slavetomints.github.io/guides/guides/network-security/nmap/installation.html">Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="green-border">
+      <md-block>
+        # Nmap
+
+        Nmap is the well known network scanner that can serve a variety of functions, such as port scanning, identifying hosts, and ping scanning. Often when you are looking to exploit a system, it is important to know the services that it is running, and what ports are on and what ports aren't. Nmap is vital in the reconnaissance stage of a penetration test, and a tool everyone should know how to utilize
+          
+        
+        ```
+
+        ┌─[slavetomints@parrot]─[~]
+        └──╼ $nmap www.example.com
+        Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-13 23:20 CST
+        Nmap scan report for www.example.com (93.184.215.14)
+        Host is up (0.050s latency).
+        Other addresses for www.example.com (not scanned): 2606:2800:21f:cb07:6820:80da:af6b:8b2c
+        Not shown: 995 filtered tcp ports (no-response)
+        PORT STATE SERVICE
+        53/tcp closed domain
+        80/tcp open http
+        443/tcp open https
+        1119/tcp closed bnetgame
+        1935/tcp closed rtmp
+        Nmap done: 1 IP address (1 host up) scanned in 5.92 seconds
+        ```
+      </md-block>
+    </div>
+
+  </div>
+  
+  <nav class="green-border" id="larger-margins">
+    <ul>
+      <li><a href="https://slavetomints.github.io/guides/index.html">Home</a></li>
+      <li><a href="https://slavetomints.github.io/writeups/writeups.html">Writeups</a></li>
+      <li><a href="https://slavetomints.github.io/guides/guides.html">Guides</a></li>
+      <li><a href="https://slavetomints.github.io/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</body>
+</html>
