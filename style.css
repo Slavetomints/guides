@@ -228,6 +228,14 @@ md-block img {
   flex-direction: row;
 }
 
+#flex-vertical-split-list {
+  flex: 1
+}
+
+#flex-vertical-split-content {
+  flex: 3
+}
+
 /* Additional Styles */
 #larger-margins {
   margin: 2% 15% 5% 15%;
@@ -241,6 +249,7 @@ md-block img {
   border-radius: 15px;
   margin: 2% 5% 5% 5%;
   padding: 5%;
+  box-sizing: border-box;
 }
 
 .green-border h2 {
