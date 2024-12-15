@@ -7,6 +7,10 @@ body {
   color: #00FF00; /* Default text color for non-code elements */
 }
 
+a {
+  text-decoration: underline;
+}
+
 dd {
   margin-bottom: 50px;
 }
